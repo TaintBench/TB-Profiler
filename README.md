@@ -1,5 +1,5 @@
 # TB-Profiler
-Command-line tool created for  [TaintBench](https://taintbench.github.io).
+Command-line tool created for  [TaintBench](https://taintbench.github.io/taintbenchFramework).
 
 # Build
 Build the project with Maven: ``mvn install``
