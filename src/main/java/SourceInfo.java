@@ -1,6 +1,7 @@
 import soot.SootMethod;
 import soot.Unit;
 
+/** @author Linghui Luo */
 public class SourceInfo {
 
   protected String stmt;

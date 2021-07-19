@@ -66,7 +66,7 @@ public class Main {
       findingsPath = cmd.getOptionValue("f");
       androidJarPath = cmd.getOptionValue("p");
       configPath = cmd.getOptionValue("c");
-      AConstants.load(configPath);
+      APISignatures.load(configPath);
     }
     TaintProfiler.run(apkPath, findingsPath, configPath, androidJarPath, outputDirName);
   }

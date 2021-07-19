@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Set;
 
+/** @author Linghui Luo */
 public class AppInfo {
   protected String id;
   protected String filePath;

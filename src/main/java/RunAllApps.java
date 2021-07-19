@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import org.apache.commons.cli.ParseException;
 
+/** @author Linghui Luo */
 public class RunAllApps {
   public static void main(String[] args)
       throws JsonIOException, JsonSyntaxException, IOException, ParseException {

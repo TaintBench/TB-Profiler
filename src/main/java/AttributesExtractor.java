@@ -30,6 +30,7 @@ import soot.jimple.internal.JInstanceFieldRef;
 import soot.jimple.internal.JInvokeStmt;
 import soot.util.Chain;
 
+/** @author Linghui Luo */
 public class AttributesExtractor {
 
   private String[] reservedAttrs = {
@@ -286,19 +287,19 @@ public class AttributesExtractor {
           attributes.add("array");
           witnesses.put("array", location.ID);
         }
-        if (AConstants.contains(AConstants.reflectionAPIs, s.toString())) {
+        if (APISignatures.contains(APISignatures.reflectionAPIs, s.toString())) {
           attributes.add("reflection");
           witnesses.put("reflection", location.ID);
         }
       }
       if (s instanceof JInvokeStmt) {
-        if (AConstants.contains(AConstants.interComponentCommunicationAPIs, s.toString()))
+        if (APISignatures.contains(APISignatures.interComponentCommunicationAPIs, s.toString()))
           attributes.add("interComponentCommunication");
-        if (AConstants.contains(AConstants.collectionAPIs, s.toString())) {
+        if (APISignatures.contains(APISignatures.collectionAPIs, s.toString())) {
           attributes.add("collections");
           witnesses.put("collections", location.ID);
         }
-        if (AConstants.contains(AConstants.payloadAPIs, s.toString())) {
+        if (APISignatures.contains(APISignatures.payloadAPIs, s.toString())) {
           attributes.add("payload");
           witnesses.put("payload", location.ID);
         }
@@ -307,7 +308,7 @@ public class AttributesExtractor {
         attributes.add("pathConstraints");
         witnesses.put("pathConstraints", location.ID);
       }
-      if (AConstants.contains(AConstants.appendToStringAPIs, s.toString())) {
+      if (APISignatures.contains(APISignatures.appendToStringAPIs, s.toString())) {
         attributes.add("appendToString");
         witnesses.put("appendToString", location.ID);
       }
@@ -337,14 +338,14 @@ public class AttributesExtractor {
       return false;
     }
     String superClassName = location.method.getDeclaringClass().getSuperclass().getName();
-    if (AConstants.contains(AConstants.threadingAPIs, superClassName)) {
+    if (APISignatures.contains(APISignatures.threadingAPIs, superClassName)) {
       witnesses.put("threading", location.ID);
       return true;
     }
     Chain<SootClass> interfaces = location.method.getDeclaringClass().getInterfaces();
     for (SootClass i : interfaces) {
       String interfaceName = i.getName();
-      if (AConstants.contains(AConstants.threadingAPIs, interfaceName)) {
+      if (APISignatures.contains(APISignatures.threadingAPIs, interfaceName)) {
         witnesses.put("threading", location.ID);
         return true;
       }

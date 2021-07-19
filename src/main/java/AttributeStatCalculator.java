@@ -59,7 +59,7 @@ public class AttributeStatCalculator {
     }
     printer.flush();
     printer.close();
-    LOGGER.info("Writing attributes statistics to "+outFile.getAbsolutePath());
+    LOGGER.info("Writing attributes statistics to " + outFile.getAbsolutePath());
   }
 
   static int j = 1;

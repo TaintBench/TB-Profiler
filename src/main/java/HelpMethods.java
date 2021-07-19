@@ -4,6 +4,7 @@ import java.io.PrintWriter;
 import java.util.HashSet;
 import java.util.Set;
 
+/** @author Linghui Luo */
 public class HelpMethods {
 
   public static void main(String[] args) throws FileNotFoundException {

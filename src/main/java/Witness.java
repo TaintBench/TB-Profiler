@@ -3,6 +3,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
+/** @author Linghui Luo */
 public class Witness {
   private Map<String, Set<String>> witnesses = new HashMap<>();
 

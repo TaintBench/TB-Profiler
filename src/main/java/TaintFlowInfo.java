@@ -1,6 +1,7 @@
 import java.util.List;
 import soot.SootMethod;
 
+/** @author Linghui Luo */
 public class TaintFlowInfo {
   protected SourceInfo sourceInfo;
   protected String componentType;

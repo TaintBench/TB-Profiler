@@ -4,6 +4,7 @@ import soot.SootClass;
 import soot.SootMethod;
 import soot.Unit;
 
+/** @author Linghui Luo */
 public class LocationInJimple {
   protected List<Unit> statements = new ArrayList<Unit>();
   protected SootMethod method;

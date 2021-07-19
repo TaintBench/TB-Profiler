@@ -1,3 +1,4 @@
+/** @author Linghui Luo */
 public class SourceOrSinkInfo extends IntermediateFlowInfo {
   protected String targetName;
 

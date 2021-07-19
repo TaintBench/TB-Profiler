@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+/** @author Linghui Luo */
 public class FindingInfo {
   protected int ID;
   protected SourceOrSinkInfo sourceInfo;

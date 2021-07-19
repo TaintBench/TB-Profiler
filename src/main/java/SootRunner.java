@@ -5,6 +5,7 @@ import soot.PackManager;
 import soot.Scene;
 import soot.options.Options;
 
+/** @author Linghui Luo */
 public class SootRunner {
 
   public static void runExtractors(

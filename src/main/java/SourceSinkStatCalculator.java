@@ -19,19 +19,6 @@ import soot.PackManager;
  * @author Linghui Luo
  */
 public class SourceSinkStatCalculator {
-  // static String androidJarPath = "E:\\Git\\androidPlatforms";
-  // static String configPath =
-  // "E:\\Git\\Github\\taintbench\\TaintProfiler\\config";
-  // static String sourcesPath = configPath + File.separator +
-  // "merged_sources.txt";
-  // static String sinksPath = configPath + File.separator + "merged_sinks.txt";
-  // static String DroidBench =
-  // "E:\\Git\\Github\\taintbench\\DroidBench30\\benchmark\\apks";
-  // static String TaintBench =
-  // "E:\\Git\\Github\\taintbench\\taint-benchmark\\apps\\android";
-  // static String PlayStoryRandom100 = "E:\\PlaystoreApps";
-  // static String FDroid = "";
-  // static String Contagio = "E:\\ContagioAndroidSampledApks";
   public static final Logger LOGGER = LoggerFactory.getLogger(SourceSinkStatCalculator.class);
 
   public static void run(String apksDir, String androidJarPath, String configPath)

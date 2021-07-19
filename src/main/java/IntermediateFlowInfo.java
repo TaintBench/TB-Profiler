@@ -3,6 +3,7 @@ import soot.SootClass;
 import soot.SootMethod;
 import soot.Unit;
 
+/** @author Linghui Luo */
 public class IntermediateFlowInfo {
   protected String statement;
   protected String methodName;
