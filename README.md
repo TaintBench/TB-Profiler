@@ -14,14 +14,14 @@ Run ``java -jar tb-profiler-0.0.1.jar'`` followed by the following command line 
            configuration files>
 ``
 
-2. calculate statistics of sources and sinks appears in the apk based on two lists ([merged_sources.txt](config/merged_sources.txt), [merged_sinks.txt](config/merged_sinks.txt)):
+2. calculate statistics of sources and sinks appears in a set of apks based on two lists ([merged_sources.txt](config/merged_sources.txt), [merged_sinks.txt](config/merged_sinks.txt)):
 
 ``
  -statSS <apks> -p <android platform jars> -c <path to configuration
            files>
 ``
 
-3. calculate statistics of attributes read from a list of TAF-files:
+3. calculate statistics of attributes read from a set of TAF-files:
 
 ``
   -statAttr <TAF-files>
